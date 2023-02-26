@@ -1,0 +1,36 @@
+<!-- Nama : Nurlaily Asrobika
+Kelas : TI3B
+NIM : 2041720172 -->
+
+<!DOCTYPE html>
+<html lang=" "id>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>React Uncover</title>
+    </head>
+    <body>
+        <h1>Belajar JavaScript</h1>
+        <script>
+            
+            const getUser = () => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        resolve("Rudi");
+                        reject("Something wrong...");
+                    }, 2000)
+                })
+            }
+            
+            const tryGetName = async () => {
+                let userName = await getUser();
+                console.log(userName);
+            };
+
+            console.log("Start...");
+            tryGetName();
+            console.log("Finish");
+
+        </script>
+    </body>
+</html>
